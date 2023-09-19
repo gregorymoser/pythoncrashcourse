@@ -99,13 +99,34 @@ print(convidados)
 
 print('\n-----Mesa maior indisponível!-----\n')
 
+# ordenando a lista de convidados por ordem alfabetica
+convidados.sort()
+print(convidados)
 
+# ordenando lista de carro por ordem alfabetica
+cars = ['volvo', 'bmw', 'mercedes', 'tesla', 'honda', 'porshe']
+cars.sort()
+print(cars)
 
-'''
+#ordenando em ordem decrescente
+cars.sort(reverse=True)
+print(cars)
+
 first_name = input('Type the first name: ')
 middle_name = input('Type the second name: ')
 last_name = input('Type the third name: ')
 
 full_name = [first_name.title(), middle_name.title(), last_name.title()]
 print(full_name)
-'''
+
+# sorted method
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+
+print("Here is the original list:")
+print(cars)
+
+print("\nHere is the sorted list:")
+print(sorted(cars))
+
+print("\nHere is the original list again:")
+print(cars)
