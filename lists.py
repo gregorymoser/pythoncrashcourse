@@ -1,3 +1,4 @@
+
 # criando uma lista
 # Uma lista é uma coleção de itens em uma ordem em particular 
 bicycles = ['trek','cannondale', 'redline','specialized']
@@ -103,7 +104,14 @@ print('\n-----Mesa maior indisponível!-----\n')
 convidados.sort()
 print(convidados)
 
-# ordenando lista de carro por ordem alfabetica
+first_name = input('Type the first name: ')
+middle_name = input('Type the second name: ')
+last_name = input('Type the third name: ')
+
+full_name = [first_name.title(), middle_name.title(), last_name.title()]
+print(full_name)
+
+
 cars = ['volvo', 'bmw', 'mercedes', 'tesla', 'honda', 'porshe']
 cars.sort()
 print(cars)
@@ -111,13 +119,6 @@ print(cars)
 #ordenando em ordem decrescente
 cars.sort(reverse=True)
 print(cars)
-
-first_name = input('Type the first name: ')
-middle_name = input('Type the second name: ')
-last_name = input('Type the third name: ')
-
-full_name = [first_name.title(), middle_name.title(), last_name.title()]
-print(full_name)
 
 # sorted method
 cars = ['bmw', 'audi', 'toyota', 'subaru']
@@ -130,3 +131,11 @@ print(sorted(cars))
 
 print("\nHere is the original list again:")
 print(cars)
+
+# reverse list
+print("\nHere is the reversed list:")
+cars.reverse()
+print(cars)
+
+# to find out the list size
+print(len(cars))
