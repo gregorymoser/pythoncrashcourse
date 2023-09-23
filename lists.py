@@ -1,5 +1,5 @@
 
-# criando uma lista
+# creating a list
 # Uma lista é uma coleção de itens em uma ordem em particular 
 bicycles = ['trek','cannondale', 'redline','specialized']
 print(bicycles)
@@ -139,3 +139,8 @@ print(cars)
 
 # to find out the list size
 print(len(cars))
+
+# for loop for list
+magicians = ['alice', 'david', 'carolina']
+for magician in magicians:
+    print(magician)
