@@ -1,19 +1,19 @@
 
 # creating a list
-# Uma lista é uma coleção de itens em uma ordem em particular 
+# A list is a collection of items in a particular order
 bicycles = ['trek','cannondale', 'redline','specialized']
 print(bicycles)
 
-# acessando elemento em determinada posicao da lista
+# accessing element in a certain position in the list
 print(bicycles[2])
 print(bicycles[-1])
 print(bicycles[3].title())
 
-# concatenando elemento da lista com string em uma mensagem
+# concatenating list element with string in a message
 message = "my first bicycle was " + bicycles[3].upper() + "."
 print(message)
 
-# adicionando elemento ao final da lista
+# adding element to the end of the list
 bicycles.append('Cross')
 message = "my last bicycle is a " + bicycles[4] + ".\n"
 print(message)
@@ -23,7 +23,7 @@ print(motorcycles)
 motorcycles[0] = 'Ducati'
 print(motorcycles)
 
-# troca manual de elementos em posicoes da lista
+# manually changing elements positions in list
 motorcycles.append('Honda')
 print(motorcycles)
 temp = motorcycles[-1]
@@ -32,39 +32,40 @@ motorcycles[0] = temp
 print(motorcycles[0].title())
 print(motorcycles)
 
-# insterimdo elemento na posicao desejada
+# inserting the element into desired position
 motorcycles.insert(2, 'BMW')
 print(motorcycles)
 
-# deletando elemento de posicao conhecida
+# deleting element of known position
 del motorcycles[4]
 print(motorcycles)
 
-#deletando elelemnto com metodo pop
+# deleting element using pop method
 popped_motorcycles = motorcycles.pop()
 print(motorcycles)
-# imprimindo o elemento que foi removido com pop
+
+# printing the removed element with pop
 print(popped_motorcycles)
 
 last_owned = motorcycles.pop()
 print('Last motorcycle owned is ' + last_owned.upper() + '.')
 
-# utilizando pop para remover elementos em uma posicao especifica da lista
+# using pop to remove elements in a specific position from the list
 motorcycles2 = ['suzuki', 'Kawasaki', 'BMW', 'Ducati', 'Yamaha', 'Honda']
 first_owned = motorcycles2.pop(0)
 print('First motorcycle owned was: ' + first_owned.title() + '.')
 
-# Removendo um item de acordo com o elemento, sem saber a posicao
+# Removing an item according to the element, without knowing the position
 motorcycles2.remove('Yamaha')
 print(motorcycles2)
 
-# removendo elemento e explicando o motivo
+# removing element and explaining why
 too_expensive = 'Ducati'
 motorcycles2.remove(too_expensive)
 print('\nRemoving ' + too_expensive.title() + ' as this is too expensive for me')
 print(motorcycles2)
 
-#faca voce mesmo
+# do it yourself
 
 print('\n-----------------------------')
 print('-----Lista de convidados-----\n')
@@ -100,7 +101,7 @@ print(convidados)
 
 print('\n-----Mesa maior indisponível!-----\n')
 
-# ordenando a lista de convidados por ordem alfabetica
+# sorting the guest list alphabetically
 convidados.sort()
 print(convidados)
 
@@ -111,12 +112,11 @@ last_name = input('Type the third name: ')
 full_name = [first_name.title(), middle_name.title(), last_name.title()]
 print(full_name)
 
-
 cars = ['volvo', 'bmw', 'mercedes', 'tesla', 'honda', 'porshe']
 cars.sort()
 print(cars)
 
-#ordenando em ordem decrescente
+# sorting in descending order
 cars.sort(reverse=True)
 print(cars)
 
